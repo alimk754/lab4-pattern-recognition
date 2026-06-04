@@ -22,11 +22,12 @@ N_MFCC     = 40
 N_MELS     = 128
 HOP_LENGTH = 512
 N_FFT      = 2048
+MAX_FRAMES = 173   # ~4 seconds at SR=22050, hop=512  →  fixed-length sequences
 
 # Training constants
-BATCH_SIZE = 32
-EPOCHS     = 50
-LR         = 1e-3
+BATCH_SIZE = 64
+EPOCHS     = 100
+LR         = 3e-4
 SEED       = 42
 
 # ==============================================================================
